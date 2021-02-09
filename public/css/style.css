@@ -17,3 +17,6 @@
 .message-button {
     float: right;
 }
+li.typing {
+    font-style: italic;
+}

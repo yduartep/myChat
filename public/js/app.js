@@ -89,7 +89,7 @@ window.onload = () => {
         var li = document.createElement('li');
         li.setAttribute('class', 'typing');
         li.setAttribute('user', data.username);
-        li.appendChild(document.createTextNode(data.message));
+        li.appendChild(document.createTextNode(data.username + ' ' + data.message));
         ul.appendChild(li);
     }
 
@@ -97,8 +97,8 @@ window.onload = () => {
         var ul = document.getElementById('messages');
         var typings = document.getElementsByClassName('typing');
         for (let t in typings) {
-            if (t.user === data.username) {
-                ul.removeChild(typing);
+            if (typings[t].attributes['user'].value === data.username) {
+                ul.removeChild(typings[t]);
             }
         }
     }
