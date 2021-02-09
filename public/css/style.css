@@ -1,6 +1,7 @@
 #messages {
     min-height: 100px;
     border: 1px solid grey;
+    background-color: lightcyan;
 }
 #chat {
     width: 100%;
